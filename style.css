@@ -1,218 +1,233 @@
- body {
-    background-color: lightblue;
-    font-family: Arial;
+ 
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
+    color: #222;
 }
 
-
-/* Header */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px;
+}
 
 header {
-    background-color: white;
-    text-align: center;
-    padding: 25px;
+    background-color: #7600bc;
+    color: white;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
-header h1 {
-    color: blue;
+.profile-name h3 {
+    margin: 0 0 8px;
+    font-size: 23px;
 }
 
-header h2 {
-    color: red;
+.profile-name p {
+    margin: 5px 0;
+    font-size: 12px;
 }
-
-header p {
-    color: green;
-    font-size: 18px;
-}
-
-
-/* Navigation */
 
 nav {
-    background-color: pink;
-    text-align: center;
-    padding: 15px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 20px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
+nav a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
 
-/* About section */
+section {
+    padding: 30px 6%;
+}
+
+h2 {
+    color: #7600bc;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
 
 .about {
-    background-color: white;
-    margin: 25px;
-    padding: 20px;
-    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    min-height: 230px;
 }
 
-.about h2 {
-    color: blue;
+.photo {
+    width: 140px;
+    height: 140px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #eee0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
 }
 
+.about h1 {
+    color: #7600bc;
+    font-size: 30px;
+}
 
-/* Image */
+.about p {
+    line-height: 1.7;
+    max-width: 750px;
+}
 
-.college-image {
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.skill-card {
+    width: 140px;
+    min-height: 125px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 3px 7px #ddd;
     text-align: center;
-    padding: 20px;
+    padding: 15px 8px;
 }
 
-.college-image img {
-    width: 500px;
-    border: 5px solid navy;
+.skill-logo {
+    font-size: 30px;
 }
 
-
-/* Information */
-
-.information {
-    background-color: white;
-    margin: 25px;
-    padding: 20px;
+.skill-card h4 {
+    margin: 12px 0;
 }
 
-.information h2 {
-    text-align: center;
-    color: blue;
+.skill-card p {
+    font-size: 13px;
 }
 
-
-/* Table */
-
-table {
-    width: 80%;
-    margin: auto;
-    border-collapse: collapse;
+.project {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
 }
 
-th {
-    background-color: navy;
-    color: white;
-}
-
-th, td {
-    border: 2px solid black;
-    padding: 12px;
-    text-align: center;
-}
-
-
-/* Departments */
-
-.departments {
-    background-color: white;
-    margin: 25px;
-    padding: 20px;
-}
-
-.departments h2 {
-    color: blue;
-}
-
-
-/* Why choose us */
-
-.why-us {
-    background-color: white;
-    margin: 25px;
-    padding: 20px;
-}
-
-.why-us h2 {
-    color: blue;
-}
-
-
-/* Admission */
-
-.admission {
-    background-color: lightgreen;
-    text-align: center;
-    padding: 30px;
-    margin: 25px;
-}
-
-.admission h2 {
-    color: darkgreen;
-}
-
-
-/* Admission button */
-
-.admission-button {
-    background-color: blue;
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-    border: 2px solid navy;
-}
-
-
-/* Google link */
-
-.google {
-    text-align: center;
-    padding: 20px;
-}
-
-
-/* Footer */
-
-footer {
-    background-color: navy;
-    color: white;
-    text-align: center;
-    padding: 25px;
-}
-.admission-form {
-    background-color: lavender;
-    width: 60%;
-    margin: 30px auto;
-    padding: 30px;
-    border: 3px solid purple;
-}
-
-.admission-form h2 {
-    text-align: center;
-    color: purple;
-}
-
-.admission-form label {
-    display: block;
-    margin-top: 15px;
+.project h3 {
     font-size: 18px;
-    color: darkmagenta;
 }
 
-.admission-form input,
-.admission-form select,
-.admission-form textarea {
-    width: 90%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 2px solid purple;
-    background-color: white;
+.project li {
+    line-height: 1.6;
 }
 
-.admission-form input[type="radio"] {
-    width: auto;
+.recommendations-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.admission-form button {
-    background-color: purple;
+.recommendation {
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 18px;
+    width: 250px;
+    min-height: 85px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.form-title {
+    margin-top: 40px;
+}
+
+#recommendation-form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#person-name,
+#message {
+    padding: 12px;
+    border: 1px solid #aaa;
+    font-family: Arial, sans-serif;
+}
+
+#message {
+    height: 100px;
+}
+
+button {
+    background: white;
+    color: #7600bc;
+    border: 1px solid #7600bc;
+    padding: 10px 25px;
+    cursor: pointer;
+    align-self: center;
+}
+
+button:hover {
+    background: #7600bc;
     color: white;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border: 2px solid darkmagenta;
 }
 
-.admission-form button:hover {
-    background-color: darkmagenta;
+.home-icon {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background: #7600bc;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #e9b9e9;
+    padding: 25px;
+    width: 280px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #recommendation-form {
+        width: 100%;
+    }
 }

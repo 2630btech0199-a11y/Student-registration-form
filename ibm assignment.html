@@ -1,0 +1,173 @@
+
+
+            
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation and Name -->
+    <header>
+        <div class="logo">
+            <span class="logo-name">Hannah farhad</span>
+            <span class="email">2630btech0199@kiet.edu</span>
+        </div>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Project details</a>
+            <a href="#skills">Skills</a>
+            <a href="#recommendations">Recommendations</a>
+        </nav>
+    </header>
+
+    <!-- About Me -->
+    <section id="about" class="about-section">
+        <div class="profile-placeholder" aria-label="Profile image placeholder">
+            <span>YOUR<br>PHOTO</span>
+        </div>
+
+        <div class="about-text">
+            <h1>Your Name <span class="wave">👋</span></h1>
+            <p>
+                Hello! I am a student interested in programming,
+                web development, and technology. I enjoy learning
+                new skills and creating projects that solve
+                real-world problems. I am currently developing
+                my knowledge of HTML, CSS, JavaScript, and C++.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-icon html-icon">5</div>
+                <h3>HTML</h3>
+                <p>Learning web structure</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon css-icon">3</div>
+                <h3>CSS</h3>
+                <p>Learning web styling</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon js-icon">JS</div>
+                <h3>JavaScript</h3>
+                <p>Learning interactivity</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon cpp-icon">C++</div>
+                <h3>C++</h3>
+                <p>Programming fundamentals</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon git-icon">G</div>
+                <h3>Git</h3>
+                <p>Version control basics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>Personal Portfolio Website</h3>
+            <ul>
+                <li>Created a personal website using HTML and CSS.</li>
+                <li>Organized information into clear sections.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>C++ Student Record System</h3>
+            <ul>
+                <li>Practiced arrays, functions, and loops in C++.</li>
+                <li>Organized student information in a simple program.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>LED Control Project</h3>
+            <ul>
+                <li>Explored controlling an LED using an ESP32.</li>
+                <li>Learned basic concepts of Wi-Fi and IoT.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+
+        <div id="recommendation-list" class="recommendation-container">
+            <div class="recommendation-card">
+                A dedicated learner who approaches new programming
+                concepts with curiosity and patience.
+            </div>
+
+            <div class="recommendation-card">
+                Demonstrates a willingness to practice, learn from
+                mistakes, and improve technical skills.
+            </div>
+
+            <div class="recommendation-card">
+                Works thoughtfully on projects and shows enthusiasm
+                for exploring new technologies.
+            </div>
+        </div>
+
+        <h2 class="form-heading">Leave a Recommendation</h2>
+
+        <form id="recommendation-form">
+            <label for="recommender-name">Your name (optional)</label>
+            <input
+                type="text"
+                id="recommender-name"
+                placeholder="Enter your name"
+            >
+
+            <label for="new-recommendation">Message</label>
+            <textarea
+                id="new-recommendation"
+                placeholder="Write your recommendation"
+                required
+            ></textarea>
+
+            <button type="submit">Submit Recommendation</button>
+        </form>
+    </section>
+
+    <!-- Home Icon -->
+    <a href="#top" class="home-icon" aria-label="Go to top">
+        ↑
+    </a>
+
+    <!-- Confirmation Popup -->
+    <div id="confirmation-popup" class="popup-overlay" role="dialog"
+         aria-modal="true" aria-labelledby="popup-title" hidden>
+        <div class="popup-box">
+            <div class="popup-check">✓</div>
+            <h3 id="popup-title">Thank you!</h3>
+            <p>Thank you for submitting a recommendation!</p>
+            <button type="button" id="close-popup">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
