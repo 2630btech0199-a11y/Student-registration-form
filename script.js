@@ -1,7 +1,3 @@
-
-
-
-
 const form = document.getElementById("recommendation-form");
 const list = document.getElementById("recommendation-list");
 const popup = document.getElementById("popup");
